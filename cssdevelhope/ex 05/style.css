@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --border: (1px solid black);
+    --widthcard: (280px);
+}
+
+.card {
+    width: var(--widthcard);
+    border-radius: 10px;
+    border-left: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+.image_card {
+    height: 190px;
+    width: var(--widthcard);
+}
+
+.image {
+    height: 100%;
+    width: var(--widthcard);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.text {
+    border-bottom: var(--border);
+}
+
+.itens-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    border-bottom: var(--border);
+}
+
+.link {
+    display: flex;
+    align-content: center;
+}
+
+p,h1,a:last-child {
+    padding-left: 15px;
+}

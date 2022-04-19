@@ -1,0 +1,48 @@
+body {
+	font-family: monospace;
+}
+
+#expand-toggle {
+	display: none;
+}
+
+.expandable {
+	visibility: collapse;
+	background: gray;
+	color: white;
+}
+
+#expand-toggle:checked ~ * tr.expandable, #toggle-btn {
+	visibility: visible; 	
+} 
+
+.btn {
+	display: inline-block;
+	margin-top: 12px;
+	padding: 6px 12px;
+	border: 1px solid;
+	border-radius: 3px;
+	transition: 0.3s;
+}
+
+#expand-btn {
+	background-color: #ff8888;
+	float: left;
+} 
+
+#toggle-btn {
+	visibility: hidden;
+	background-color: #88ff88;
+	position: absolute;
+	left: 8px;
+}
+
+#expand-toggle:checked ~ #expand-btn {
+	visibility: hidden;
+}
+
+
+#expand-toggle:checked ~ #expand-btn {
+	visibility: hidden;
+	background-color: #88ff88;
+}

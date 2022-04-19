@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+
+}
+
+body {
+    margin: 0;
+    height: 100%;
+
+}
+
+.layout {
+    display: flex;
+    height: 100%;
+}
+
+.link a {
+    color: #2b2b2b;
+}
+
+.link a:hover {
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+aside {
+    order: 1;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    background: linear-gradient(rgba(111,111,111,0.6647701316854867) 0%, rgba(173,173,173,1) 37%, rgba(255,255,255,1) 100%);
+    margin-right: 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.aside-top {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.user-aside {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    border: 1px solid grey;
+    box-sizing: border-box;    
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;   
+    border-radius: 50%;
+    border: 3px solid black;
+    margin: 0px;  
+}
+
+hr {
+    width: 160px;
+    background-color: grey;
+    
+}
+
+.user-name { 
+    width: 200px;
+    text-align: center;   
+}
+
+.aside-link {
+    width: 200px;
+    height: 120px;
+}
+
+.aside-link .link {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.aside-description {
+    width: 200px;
+    height: 110px;
+    padding: 5px;
+}
+
+.aside-bot{
+    width: 200px;
+    height: 20px;
+    background-color: darkgrey;
+    font-size: 10px;
+    position: absolute;
+    bottom:  0px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+main {
+    order: 2;
+    width: max-content;
+}
+
+p {
+    text-transform: capitalize;
+}
