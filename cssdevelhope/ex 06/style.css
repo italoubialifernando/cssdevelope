@@ -1,11 +1,11 @@
-body{
+body {
     background-color: black;
     margin: 0px;
     box-sizing: border-box;
 }
 
 nav {
-    width: 100%; 
+    width: 100%;
     height: 40px;
     background-color: grey;
     font-family: sans-serif;
@@ -33,23 +33,28 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-   
-    .nav-box-center, .nav-box-right {
+
+    .nav-box-center,
+    .nav-box-right {
         display: none;
     }
-    
-    .hamburger-menu  {
+
+    .hamburger-menu {
         display: block;
     }
 
 }
 
-.nav-box-left {
-  flex: 1;
-    
+.pad-right {
+    padding-right: 20px;
 }
 
-.nav-logo-img, img{
+.pad-left {
+    padding-left: 20px;
+}
+
+.nav-logo-img,
+img {
     width: 40px;
     height: 40px;
     padding-right: 10px;
@@ -61,17 +66,17 @@ a {
 
 nav div {
     display: flex;
-    justify-content: center; 
+    justify-content: left;
     align-items: center;
-
 }
 
 .nav-box-center {
-    flex: 1;
+    justify-content: left;
 }
+
 .nav-menu {
     display: flex;
-    justify-content: space-between; 
+    justify-content: left;
     width: 100%;
 }
 
@@ -80,7 +85,7 @@ nav div {
     text-align: center;
 }
 
-.nav-menu-dropdown{
+.nav-menu-dropdown {
     position: relative;
     display: inline-block;
 }
@@ -91,12 +96,12 @@ nav div {
     min-width: 115px;
     min-height: 80px;
     box-shadow: 5px 5px 12px 2px rgba(25, 100, 32, 0.575);
-  
+
 }
 
 .nav-menu-dropdown:hover .nav-menu-dropdown-content {
     display: block;
-} 
+}
 
 .nav-menu-dropdown-content .nav-menu-item {
     width: 100%;
